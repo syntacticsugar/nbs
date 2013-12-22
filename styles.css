@@ -82,28 +82,34 @@ button::-moz-focus-inner {
 }
 
 #artists ul {
+  background: #e5e5e5;
   text-transform: uppercase;
   font-weight: 600;
   list-style-type:none;
   -webkit-padding-start: 0;
+  padding: 10px;
+  box-shadow: inset 0 3px 8px #ccc;
 }
 
 #artists li {
   display: inline;
   padding-right: 15px;
+  text-shadow: 0 2px 2px #fff;
 }
 
 #artists li a:link {
   padding: 4px;
   padding-left: 7px;
   padding-right: 7px;
+  padding-top: 9px;
 }
 
 #artists li a:hover {
   text-decoration: none;
   background: #204565;
   color: #99d0ff;
-  border-bottom: 4px solid navy;
+  border-bottom: 4px solid #07243d;
+  text-shadow: 1px 0 0 #000;
 }
 
 
