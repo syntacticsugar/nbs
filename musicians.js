@@ -26,16 +26,19 @@ var musicians = {
 };
 
 function setup(magic_data) {
+  // draw lana del rey by default
   draw(magic_data,303701);
-  $("#artist_143").click(function() {
-    var svg = $("#main_svg");
-    svg.empty();
-    draw(magic_data,143);
 
-  });
+  for (var m in musicians) {
+    console.log(m);
+    $("#artist_" + m.toString()).click(function() {
+      var svg = $("#main_svg");
+      svg.empty();
+      draw(magic_data, m);
+    });
+  }
+
 }
-
-
 
 function draw(data,artist_id) {
 // "var data" is the json file
