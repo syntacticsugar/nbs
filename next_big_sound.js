@@ -7,11 +7,11 @@ for (var k in data_totals) {
   data_array.push({date: k, fb_likes: data_totals[k]});
 }
 
-var margin = 50,
-    width = 900,
-    height = 700;
+var margin = 5,
+    width = 1100,
+    height = 400;
 
-d3.select("body")
+d3.select("#main_svg")
   .append("svg")
     .attr("width", width)
     .attr("height", height)
@@ -36,5 +36,5 @@ d3.selectAll('circle')
     .attr("cy", function(d){return y_scale(d.fb_likes)});
 
 d3.selectAll("circle") 
-    .attr("r", 5);
+    .attr("r", 1);
 }
