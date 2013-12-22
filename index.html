@@ -1,21 +1,33 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>♥ ♥ Dataviz for ♫ ♬</title>
+    <title>&hearts; &hearts; Data</title>
     <script src="d3.v3.min.js"></script>
-    <!--<script src="sample_data.js"></script>-->
-    <script src="next_big_sound.js"></script>
+    <!--<script src="sample_data.js"></script>
+    <script src="next_big_sound.js"></script>-->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
   </head>
   <body class="container">
-    <h1>dataviz for music</h1>
+    <h3>dataviz for music</h3><br>
     <p></p>
-    <h3>Taylor Swift's Facebook Likes</h3>
-    <p>How many likes were garnered on a daily basis</p>
-    <svg id="main_svg">
+    <p>How many <strong>Facebook likes</strong> were garnered on a daily basis?</p>
+  <div id="artists">
+    <ul>
+      <li><a href="1a_taylor_swift_facebook_likes.html">Taylor Swift</a></li>
+      <li><a href="1b_britney_spears_facebook_likes.html">Britney Spears</a></li>
+      <li><a href="1c_lady_gaga_facebook_likes.html">Lady Gaga</a></li>
+      <li><a href="1d_miley.html">Miley Cyrus</a></li>
+      <li><a href="1e_lana.html">Lana Del Rey</a></li>
+      <li><a href="1f_marina.html">Marina and the Diamonds</a></li>
+    </ul>
+  </div>
+  <p><br><br><em>(Click above links to view graphs on a new page.)</em></p>
+<!--    <svg id="main_svg">
     </svg>
     <script>
       d3.json("data_for_nbs.json",draw);
     </script>
+    -->
   </body>
 </html>

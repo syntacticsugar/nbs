@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title></title>
+    <script src="d3.v3.min.js"></script>
+    <!--<script src="sample_data.js"></script>-->
+    <!--<script src="next_big_sound.js"></script>-->
+    <script src="5b_britney_spears.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body class="container">
+    <h3>Britney Spears</h3>
+    <p></p>
+    <svg id="main_svg">
+    </svg>
+    <script>
+      //d3.json("data_for_nbs.json",draw);
+      d3.json("entityData.json",draw);
+    </script>
+  </body>
+</html>
