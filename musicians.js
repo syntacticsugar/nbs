@@ -11,10 +11,6 @@ var musicians = {
     name: "Lady Gaga",
     endpoint: "380098_ladygaga"
   },
-  659: {
-    name: "Lady Gaga",
-    endpoint: "380098_ladygaga"
-  },
   4599: {
     name: "Miley Cyrus",
     endpoint: "382159_MileyCyrus"
@@ -31,7 +27,15 @@ var musicians = {
 
 function setup(magic_data) {
   draw(magic_data,303701);
+  $("#artist_143").click(function() {
+    var svg = $("#main_svg");
+    svg.empty();
+    draw(magic_data,143);
+
+  });
 }
+
+
 
 function draw(data,artist_id) {
 // "var data" is the json file
@@ -47,7 +51,7 @@ function draw(data,artist_id) {
       height = 400;
 
   d3.select("#main_svg")
-    .append("svg")
+    //.append("svg")
       .attr("width", width)
       .attr("height", height)
     .selectAll("circle")
