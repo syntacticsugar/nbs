@@ -1,5 +1,6 @@
 # next big sound
 ## learning experience.
 
-learning experience, AND job application.
+goal: learning experience, AND job application.
 
+I'll create a scatterplot, I guess.
