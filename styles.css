@@ -98,10 +98,10 @@ button::-moz-focus-inner {
 }
 
 #artists li a:link {
-  padding: 4px;
-  padding-left: 7px;
-  padding-right: 7px;
+  padding-left: 9px;
+  padding-right: 9px;
   padding-top: 9px;
+  padding-bottom: 7px;
 }
 
 #artists li a:hover {
