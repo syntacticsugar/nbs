@@ -25,17 +25,21 @@ var musicians = {
   },
 };
 
+function get_draw_func(data, id) {
+  return function () {
+      var svg = $("main_svg");
+      svg.empty();
+      draw(data, id);
+  }
+}
+
 function setup(magic_data) {
   // draw lana del rey by default
   draw(magic_data,303701);
 
   for (var m in musicians) {
     console.log(m);
-    $("#artist_" + m.toString()).click(function() {
-      var svg = $("#main_svg");
-      svg.empty();
-      draw(magic_data, m);
-    });
+    $("#artist_" + m.toString()).click(get_draw_func(magic_data, m));
   }
 
 }
@@ -45,6 +49,7 @@ function draw(data,artist_id) {
   var data_totals = data.output.artists[artist_id].metrics[11].endpoints[musicians[artist_id].endpoint].data.global.values.totals;
 
   var data_array = [];
+
   for (var k in data_totals) {
     data_array.push({date: k, fb_likes: data_totals[k]});
   }
