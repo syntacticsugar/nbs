@@ -3,6 +3,7 @@
   <head>
     <title>&hearts; &hearts; Data</title>
     <script src="d3.v3.min.js"></script>
+    <script src="musicians.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
     <!--<script src="sample_data.js"></script>
     <script src="next_big_sound.js"></script>-->
@@ -23,12 +24,11 @@
       <li><a href="1f_marina.html">Marina and the Diamonds</a></li>
     </ul>
   </div>
-  <p><br><br><em>(Click above links to view graphs on a new page.)</em></p>
-<!--    <svg id="main_svg">
+  <p><br><br><em></em></p>
+    <svg id="main_svg">
     </svg>
     <script>
-      d3.json("data_for_nbs.json",draw);
+      d3.json("entityData.json",setup);
     </script>
-    -->
   </body>
 </html>
