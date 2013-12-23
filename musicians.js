@@ -25,6 +25,7 @@ var musicians = {
   },
 };
 
+// helper to return the callback
 function get_draw_func(data, id) {
   return function () {
       var svg = $("main_svg");
@@ -82,7 +83,23 @@ function draw(data,artist_id) {
       .attr("cx", function(d){return x_scale(d.date)})
       .attr("cy", function(d){return y_scale(d.fb_likes)});
 
-  d3.selectAll("circle") 
+  d3.selectAll("circle")
       .attr("r", 1);
+
+  // starts to draw axes
+  var x_axis = d3.svg.axis().scale(x_scale);
+  d3.select("svg")
+    .append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + (height-margin) + ")")
+    .call(x_axis);
+
+  var y_axis = d3.svg.axis().scale(y_scale).orient("left");
+  d3.select("svg")
+    .append("g")
+      .attr("class", "y axis")
+      .attr("transform", "translate(" + margin + ", 0 )")
+    .call(y_axis);
+  // end of drawing axes
 }
 
