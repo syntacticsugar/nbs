@@ -55,9 +55,9 @@ function draw(data,artist_id) {
     data_array.push({date: k, fb_likes: data_totals[k]});
   }
 
-  var margin = 5,
+  var margin = 9,
       width = 1100,
-      height = 400;
+      height = 500;
 
   d3.select("#main_svg")
     //.append("svg")
@@ -101,5 +101,11 @@ function draw(data,artist_id) {
       .attr("transform", "translate(" + margin + ", 0 )")
     .call(y_axis);
   // end of drawing axes
+  // axes labels
+  d3.select(".x.axis")
+    .append("text")
+      .text("Number of Facebook Likes")
+      .attr("x", (width / 2) - margin)
+      .attr("y", margin / 1.5);
 }
 

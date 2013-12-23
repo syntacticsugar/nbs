@@ -4,11 +4,6 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-#container {
-  margin: 300px auto;
-  width: 200px;
-}
-
 button {
   background: #3b88d8;
   background: -moz-linear-gradient(0% 100% 90deg, #377ad0, #52a8e8);
