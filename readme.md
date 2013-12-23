@@ -1,6 +1,4 @@
 # next big sound
-## learning experience.
-
-goal: learning experience, AND job application.
+## simple D3 visualization
 
 I'll create a scatterplot, I guess.
