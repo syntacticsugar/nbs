@@ -28,7 +28,7 @@ var musicians = {
 // helper to return the callback
 function get_draw_func(data, id) {
   return function () {
-      var svg = $("main_svg");
+      var svg = $("#main_svg");
       svg.empty();
       draw(data, id);
   }
