@@ -50,7 +50,9 @@ function draw(data,artist_id) {
   var data_array = [];
 
   for (var k in data_totals) {
-    data_array.push({date: k, fb_likes: data_totals[k]});
+    data_array.push({
+      date: d3.time.day.offset(new Date(1970,0,0), parseInt(k)),
+      fb_likes: data_totals[k]});
   }
 
   var margin = 70,
@@ -68,7 +70,7 @@ function draw(data,artist_id) {
 
   var x_extent = d3.extent(data_array, function(d){return d.date});
 
-  var x_scale = d3.scale.linear()
+  var x_scale = d3.time.scale()
                         .range([margin,width-margin])
                         .domain(x_extent);
 
