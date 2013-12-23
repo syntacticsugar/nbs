@@ -56,7 +56,7 @@ function draw(data,artist_id) {
   }
 
   var margin = 70,
-      width = 1100,
+      width = 960,
       height = 500;
 
   d3.select("#main_svg")
