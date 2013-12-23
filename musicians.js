@@ -42,11 +42,9 @@ function setup(magic_data) {
     console.log(m);
     $("#artist_" + m.toString()).click(get_draw_func(magic_data, m));
   }
-
 }
 
 function draw(data,artist_id) {
-// "var data" is the json file
   var data_totals = data.output.artists[artist_id].metrics[11].endpoints[musicians[artist_id].endpoint].data.global.values.totals;
 
   var data_array = [];
@@ -55,7 +53,7 @@ function draw(data,artist_id) {
     data_array.push({date: k, fb_likes: data_totals[k]});
   }
 
-  var margin = 9,
+  var margin = 70,
       width = 1100,
       height = 500;
 

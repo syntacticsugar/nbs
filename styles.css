@@ -110,11 +110,11 @@ button::-moz-focus-inner {
 
 .axis path {
   fill:none;
-  stroke: black;
+  stroke: gray;
 }
 
 .axis {
-  font-size:6pt;
+  font-size:9pt;
   font-family:sans-serif;
 }
 
