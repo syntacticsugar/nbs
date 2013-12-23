@@ -104,7 +104,7 @@ function draw(data,artist_id) {
   // axes labels
   d3.select(".x.axis")
     .append("text")
-      .text("Number of Facebook Likes")
+      .text("Number of Facebook Likes Plotted by Date")
       .attr("x", (width / 2) - margin)
       .attr("y", margin / 1.5);
 }
